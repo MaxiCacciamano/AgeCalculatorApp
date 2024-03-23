@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+.placeholder-error{
+  width: 85px;
+  font-size: 32px;
+  /* padding: 11px; */
+  border-radius: 5px;
+  border: 1px solid RED;
+}
+.input-error {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  /* font-style: italic; */
+  display: block;
+}
+.card{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 20px 20px 130px 20px;
+  .content{
+  }
+  .form{
+    display: flex;
+    /* margin-left: 50px; */
+    .input{
+      width: 110px;
+      font-size: 32px;
+      /* padding: 11px; */
+      border-radius: 5px;
+      border: 1px solid hsl(0, 0%, 86%);
+    }
+    h6{
+      line-height: 1px;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    label{
+      position: relative;
+      /* right: 1px; */
+      margin-right: 7px;
+    }
+  }
+  .button{
+    float: right;
+    button{
+      border-radius:100%;
+      width: 70px;
+      height: 70px;
+      background-color: hsl(259, 100%, 65%);
+    }
+  }
+  .result{
+    text-align: left;
+    .age{
+      color: hsl(259, 100%, 65%);
+    }
+  }
+  p{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .line{
+    border-top: 1px solid hsl(0, 0%, 86%);
+    position: relative;
+    top: 35px;
+    width: 85%;
+    line-height: 1px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card{
+    height: 500px;
+    padding: 20px;
+    .form{
+      display: flex;
+      .input{
+        width: 70px;
+        font-size: 20px;
+      }
+      h6{
+        line-height: 1px;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      label{
+        position: relative;
+        margin-right: 7px;
+      }
+    }
+    .button{
+      float: none;
+      padding-top: 30px;
+      position: relative;
+      z-index: 1;
+      button{
+        border-radius:100%;
+        width: 60px;
+        height: 60px;
+        background-color: hsl(259, 100%, 65%);
+      }
+    }
+    .line{
+      visibility: hidden;
+    }
+    .result{
+      text-align: center;
+      justify-content: center;
+    }
+    p{
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 5px;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
